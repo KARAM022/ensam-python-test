@@ -1,10 +1,4 @@
-from flask import Flask
+import streamlit as st
 
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return "Hello, this is my Python website!"
-
-if __name__ == '__main__':
-    app.run(debug=True)
+st.title("My Streamlit App")
+st.write("Hello, this is my Python website built with Streamlit!")
